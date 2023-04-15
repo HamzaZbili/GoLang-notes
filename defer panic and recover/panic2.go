@@ -36,6 +36,15 @@ func main () {
 	panicker() // main function continues
 	// despite panic thrown inside panicker() function
 	fmt.Println("there")
+
+	// summary
+	// panics are used when an application gets into
+	// state that it can't recover from
+
+	// recover() is used to recover from panis
+	// - only useful in deferred functions
+	// - the currect function will not continue;
+	// - but rest higher functions will after recovered
 }
 
 
@@ -50,5 +59,5 @@ func panicker() {
 		}()
 		// thorws panic
 	panic("something bad happened")
-	fmt.Println("panic over") // does not print
+	// fmt.Println("panic over") // does not print
 }
