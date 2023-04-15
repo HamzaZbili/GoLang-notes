@@ -52,10 +52,15 @@ func main () {
 			}
 		}
 
+
+	// loop through collection
 	slice := []int{1,2,3}
 	// can recplace k with _ if not needed
 	for k, v := range slice { 
-		// loop through slice with key and value
+		// key and value
 		fmt.Println(k,v)
 	}
+	// can loop through:
+	// arrays, slices, strings (k returns index)
+	// maps, channels (k returns field name)
 }
