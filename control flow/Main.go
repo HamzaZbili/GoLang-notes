@@ -61,7 +61,7 @@ func main() {
 	}
 
 	// switch statement
-	switch 2 {
+	switch 2 { // 2 is the tag
 		// first true case will execute
 	case 1:
 		fmt.Println("one")
